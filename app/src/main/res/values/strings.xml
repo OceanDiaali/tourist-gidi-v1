@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TouristGidi</string>
+    <string name="video_label">Videos</string>
+    <string name="wiki_label">Wikis</string>
+    <string name="map_label">Maps</string>
+    <string name="about_label">About</string>
+</resources>
