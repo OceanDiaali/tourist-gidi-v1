@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TouristGidi</string>
+    <string name="app_name">Tourist Gidi</string>
     <string name="video_label">Videos</string>
     <string name="wiki_label">Wikis</string>
     <string name="map_label">Maps</string>

@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         about_btn.setOnClickListener {
-            Toast.makeText(this, "Tourist Gidi helps you find and learn about important monuments in Lagos", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Tourist Gidi helps you find and learn about important places in Lagos", Toast.LENGTH_LONG).show()
         }
     } // main on create
 } // class

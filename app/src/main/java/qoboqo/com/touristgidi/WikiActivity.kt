@@ -13,8 +13,8 @@ class WikiActivity : AppCompatActivity() {
     var wiki_sites = arrayOf("National Arts Theatre", "Third mainland bridge", "National stadium",
                              "Tinubu square", "Lekki conservation centre", "Tafawa Balewa square",
                               "Freedom park", "Taiwo Olowo monument", "National museum", "kalakuta museum",
-                               "Cathedral church of christ", "Shitta Bey mosque", "Lufasi nature park",
-                               "Lagos lagoon")
+                               "Cathedral church of christ", "Shitta Bey mosque", "Jhalobia park and gardens",
+                               "Lagos lagoon", "Tarkwa bay beach")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class WikiActivity : AppCompatActivity() {
         listView.setAdapter(adapter)
         
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            var itemId = parent.getItemIdAtPosition(position).toInt()
+            val itemId = parent.getItemIdAtPosition(position).toInt()
             //Toast.makeText(this, "Showing Wiki number $itemId", Toast.LENGTH_SHORT).show()
 
             when(itemId) {
@@ -39,14 +39,15 @@ class WikiActivity : AppCompatActivity() {
                 3 -> openWebPage("https://en.wikipedia.org/wiki/Tinubu_Square")
                 4 -> openWebPage("https://en.wikipedia.org/wiki/Lekki_Conservation_Centre")
                 5 -> openWebPage("https://en.wikipedia.org/wiki/Tafawa_Balewa_Square")
-                6 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                7 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                8 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                9 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                10 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                11-> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                12 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
-                13 -> openWebPage("https://en.wikipedia.org/wiki/National_Arts_Theatre")
+                6 -> openWebPage("https://en.wikipedia.org/wiki/Freedom_Park_(Lagos)")
+                7 -> openWebPage("https://en.wikipedia.org/wiki/Taiwo_Olowo")
+                8 -> openWebPage("https://en.wikipedia.org/wiki/Nigerian_National_Museum")
+                9 -> openWebPage("https://en.wikipedia.org/wiki/Kalakuta_Republic")
+                10 -> openWebPage("https://en.wikipedia.org/wiki/Cathedral_Church_of_Christ,_Lagos")
+                11-> openWebPage("https://en.wikipedia.org/wiki/Shitta-Bey_Mosque")
+                12 -> openWebPage("https://en.wikipedia.org/wiki/Jhalobia_Recreation_Park_and_Garden")
+                13 -> openWebPage("https://en.wikipedia.org/wiki/Lagos_Lagoon")
+                14 -> openWebPage("https://en.wikipedia.org/wiki/Tarkwa_Bay_Beach")
 
                 else -> Toast.makeText(this, "Cannot display selection", Toast.LENGTH_LONG).show()
             }

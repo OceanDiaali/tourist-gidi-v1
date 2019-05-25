@@ -17,8 +17,8 @@ class MapActivity : AppCompatActivity() {
     var map_sites = arrayOf("National Arts Theatre", "Third mainland bridge", "National stadium",
         "Tinubu square", "Lekki conservation centre", "Tafawa Balewa square",
         "Freedom park", "Taiwo Olowo monument", "National museum", "kalakuta museum",
-        "Cathedral church of christ", "Shitta Bey mosque", "Lufasi nature park",
-        "Lagos lagoon")
+        "Cathedral church of christ", "Shitta Bey mosque", "Jhalobia park and gardens",
+        "Lagos lagoon", "Tarkwa bay beach")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +33,7 @@ class MapActivity : AppCompatActivity() {
         listView.setAdapter(adapter)
 
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            var itemId = parent.getItemIdAtPosition(position).toInt()
+            val itemId = parent.getItemIdAtPosition(position).toInt()
             //Toast.makeText(this, "Showing Wiki number $itemId", Toast.LENGTH_SHORT).show()
 
             when(itemId) {
@@ -46,6 +46,12 @@ class MapActivity : AppCompatActivity() {
                 6 -> newMap("6.4490", "3.3965")
                 7 -> newMap(" 6°27'21.6", "3°23'4.56")
                 8 -> newMap("6.4443", "3.4037")
+                9 -> newMap("6.6027", "3.3490")
+                10 -> newMap("6.4507", "3.3901")
+                11 -> newMap("6.453056","3.395833")
+                12 -> newMap("6.5526", "3.3376")
+                13 -> newMap("6.4311", "3.4019")
+                14 -> newMap("6.4006", "3.3956")
 
                 else -> Toast.makeText(this, "Cannot display selection", Toast.LENGTH_LONG).show()
             }
